@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Record Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container mt-5">
+  <h2 class="mb-4">Student Record Form</h2>
+  <form method="POST" action="/submit" enctype="multipart/form-data">
+    <div class="mb-3">
+      <label for="student_id" class="form-label">Student ID</label>
+      <input type="text" class="form-control" name="student_id" id="student_id" required>
+    </div>
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" name="name" id="name" required>
+    </div>
+    <div class="mb-3">
+      <label for="department" class="form-label">Department</label>
+      <input type="text" class="form-control" name="department" id="department" required>
+    </div>
+    <div class="mb-3">
+      <label for="photo" class="form-label">Profile Photo</label>
+      <input type="file" class="form-control" name="photo" id="photo" accept="image/*" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit Record</button>
+  </form>
+</body>
+</html>
