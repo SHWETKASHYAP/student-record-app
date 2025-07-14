@@ -78,6 +78,6 @@ app.post('/submit', upload.single('photo'), async (req, res) => {
 });
 
 // Start server
-app.listen(port, '0.0.0.0', () => {
-  console.log(`🚀 Server running on http://localhost:${port}`);
+app.listen(3000, '0.0.0.0', () => {
+  console.log("Server running on port 3000");
 });
